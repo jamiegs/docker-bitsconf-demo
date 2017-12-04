@@ -7,15 +7,6 @@ Talk: December 5th
 
 Learn what Docker and ECS are, why we're using them for Marvel, and how it can make your life better at Hudl and beyond.
 
-https://www.youtube.com/watch?v=FdkNAjjO5yQ - docker for developers
-https://www.youtube.com/watch?v=Q5POuMHxW-0 - introduction to docker - early
-https://www.youtube.com/watch?v=Q5POuMHxW-0 - why we built docker
-https://www.youtube.com/watch?v=3N3n9FzebAA - Docker Vs VM
-https://www.youtube.com/watch?v=J88J_yox940&list=PLed9PY_Wq5pOBUw4XfoUMfom0WAu8WfpX  - Docker lightning talks
-https://www.youtube.com/watch?v=4sBF5Dg8dQ4 - Why docker is perfect for microservices
-
-Resources:
-https://www.airpair.com/docker/posts/8-proven-real-world-ways-to-use-docker
 
 Agenda
 	
@@ -62,3 +53,15 @@ Agenda
 		- pricing
 	- Show how it can be used for local couchbase, mongo, redis.
 
+
+
+
+Resources
+=========
+https://www.youtube.com/watch?v=FdkNAjjO5yQ - docker for developers
+https://www.youtube.com/watch?v=Q5POuMHxW-0 - introduction to docker - early
+https://www.youtube.com/watch?v=Q5POuMHxW-0 - why we built docker
+https://www.youtube.com/watch?v=3N3n9FzebAA - Docker Vs VM
+https://www.youtube.com/watch?v=J88J_yox940&list=PLed9PY_Wq5pOBUw4XfoUMfom0WAu8WfpX  - Docker lightning talks
+https://www.youtube.com/watch?v=4sBF5Dg8dQ4 - Why docker is perfect for microservices
+https://www.airpair.com/docker/posts/8-proven-real-world-ways-to-use-docker

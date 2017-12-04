@@ -1,0 +1,35 @@
+{
+    "family": "sample-fargate", 
+    "networkMode": "awsvpc",
+    "taskRoleArn": "bitsconf-demo-role",
+    "executionRoleArn": "bitsconf-demo-role",
+    "containerDefinitions": [
+        {
+            "name": "bitsconf-demo", 
+            "image": "774656682386.dkr.ecr.us-east-1.amazonaws.com/docker-bitsconf-demo:latest", 
+            "portMappings": [
+                {
+                    "containerPort": 80, 
+                    "hostPort": 80, 
+                    "protocol": "tcp"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "bitsconf-demo",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "bitsconf-demo"
+                }
+            },
+            "essential": true
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}
+
+
