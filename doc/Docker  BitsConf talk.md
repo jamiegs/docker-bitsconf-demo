@@ -7,7 +7,6 @@ Talk: December 5th
 
 Learn what Docker and ECS are, why we're using them for Marvel, and how it can make your life better at Hudl and beyond.
 
-
 Agenda
 	
 	- What is docker
