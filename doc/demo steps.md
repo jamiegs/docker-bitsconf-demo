@@ -1,4 +1,4 @@
-
+ 
 Prep
 ====
 aws-switch personal
@@ -13,12 +13,19 @@ docker pull microsoft/dotnet:2.0-runtime
 Demo Steps
 ==========
 
+
+Running Simple container
+=========================
 docker run docker/whalesay cowsay hello bitsconf
+
+Running Container with prompt
+=============================
 docker run -it ubuntu bash
 
 run couchbase
 =============
 docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase
+
 http://localhost:8091
 
 Creating your own image
@@ -27,9 +34,9 @@ dotnet new mvc --name docker-bitsconf-demo
 
 csproj:
 
-  <PropertyGroup>
-    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
-  </PropertyGroup>
+	<PropertyGroup>
+		<PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+	</PropertyGroup>
 
 subl Dockerfile
 
@@ -80,7 +87,7 @@ aws ecs register-task-definition --cli-input-json file://$HOME/personalGit/docke
 
 Create Service and Launch Containers
 ------------------------------------
-aws ecs create-service --cluster fargate-cluster --service-name fargate-service --task-definition sample-fargate:7 --load-balancers targetGroupArn=arn:aws:elasticloadbalancing:us-east-1:774656682386:targetgroup/bitsconf-target-group/71c3ec2a618d16ec,containerName=bitsconf-demo,containerPort=80 --desired-count 2 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-536acb7c,subnet-0500da58],securityGroups=[sg-6dd1b918],assignPublicIp=ENABLED}"
+aws ecs create-service --cluster fargate-cluster --service-name fargate-service --task-definition sample-fargate:9 --load-balancers targetGroupArn=arn:aws:elasticloadbalancing:us-east-1:774656682386:targetgroup/bitsconf-target-group/71c3ec2a618d16ec,containerName=bitsconf-demo,containerPort=80 --desired-count 2 --launch-type "FARGATE" --network-configuration "awsvpcConfiguration={subnets=[subnet-536acb7c,subnet-0500da58],securityGroups=[sg-6dd1b918],assignPublicIp=ENABLED}"
 
 Demo Url
 --------
